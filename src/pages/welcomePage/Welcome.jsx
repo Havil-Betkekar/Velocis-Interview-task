@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import "./Welcome.css";
 import comboLogo from "../../assets/png/combo_logo.png";
+import { Link } from "react-router-dom";
 
 const Welcome = () => {
   const [showUpArrow, setShowUpArrow] = useState(false);
@@ -47,7 +48,9 @@ const Welcome = () => {
               makes modern content marketing teams successful.
             </p>
 
-            <p>Start reading</p>
+            <p className="startReadingLink">
+              <Link to="/contents">Start reading</Link>
+            </p>
             {/* log combinations */}
             <div className="logoComibnations">
               <img src={comboLogo} alt="" />
