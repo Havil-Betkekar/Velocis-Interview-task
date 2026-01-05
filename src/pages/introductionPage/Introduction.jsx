@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import "./Introduction.css";
 import { Link } from "react-router-dom";
-import ManagerDemographicsPieCharts from "../../components/charts/managerDemographicsPieCharts";
+import ManagerDemographicsPieCharts from "../../components/charts/ManagerDemographicsPieCharts";
 import PieChartFromData from "../../components/charts/PieChartFromData";
 import DonutPieChart from "../../components/charts/DonutPieChart";
 import PercentageCircles from "../../components/charts/PercentageCircles";
