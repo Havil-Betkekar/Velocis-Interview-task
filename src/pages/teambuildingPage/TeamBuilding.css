@@ -1,0 +1,13 @@
+.teamBuildBg {
+  background-image: url("../../assets/jpg/onboardingBg.jpg");
+  min-height: 70vh;
+  background-size: cover;
+  position: relative;
+}
+.teamBuildBgText {
+  position: absolute;
+  top: 7rem;
+  left: 5rem;
+  color: #fff;
+  font-size: 3rem;
+}

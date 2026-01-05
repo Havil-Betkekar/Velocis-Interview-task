@@ -1,0 +1,140 @@
+.pageWrapper {
+  position: relative;
+}
+.navbarWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 20px;
+}
+.menuItems {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menuIcon {
+  cursor: pointer;
+}
+.logoClass {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logoClass img {
+  width: 8rem;
+  cursor: pointer;
+}
+
+.extraInfo {
+  background-color: grey;
+  padding: 10px;
+}
+
+.sideNavbar {
+  position: fixed;
+  inset: 0;
+  background: #e5dcdc;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+
+  transform: translateY(-100%);
+  opacity: 0;
+
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+.sideNavbar.open {
+  transform: translateY(0);
+  opacity: 1;
+  /* transition-delay: 0s, 0.15s; */
+  z-index: 11;
+}
+/* .alignment {
+  display: none;
+} */
+.sideBarHeadingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.sideNavbarHeading {
+  display: flex;
+  gap: 20px;
+
+  /* opacity: 0;
+  transform: translateY(12px);
+  transition: all 0.4s ease;
+  transition-delay: 0.35s; */
+}
+
+.sideNavbar.open .sideNavbarHeading {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.closeIcon {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.sideNavbarContent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* LINK */
+.pageThumb {
+  position: relative;
+  display: block;
+  height: 220px;
+  text-decoration: none;
+  overflow: hidden;
+  color: white;
+}
+
+/* IMAGE */
+.thumbImage {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+/* DARK OVERLAY */
+.thumbOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+/* TEXT */
+.thumbIndex {
+  font-size: 32px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.thumbTitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* HOVER */
+.pageThumb:hover .thumbImage {
+  transform: scale(1.08);
+  background-color: aliceblue;
+}
+
+/* ACTIVE */
+.pageThumb.active .thumbOverlay {
+  background: rgba(0, 0, 0, 0.65);
+}

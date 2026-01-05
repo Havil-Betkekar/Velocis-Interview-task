@@ -1,0 +1,60 @@
+.contenPageWrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+/* LEFT SIDE */
+.contentLeft {
+  flex: 1;
+  padding: 120px 80px;
+  z-index: 2;
+}
+
+.contentTitle {
+  font-size: 72px;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+
+/* GRID */
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 80px;
+}
+
+.contentItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+.contentItem:hover .contentNumber {
+  opacity: 0.7;
+}
+
+.contentNumber {
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.contentLabel {
+  font-size: 18px;
+  max-width: 160px;
+}
+
+/* RIGHT YELLOW SHAPE */
+.contentRight {
+  position: absolute;
+  right: -20%;
+  top: -10%;
+  width: 80%;
+  height: 120%;
+  background: #ffeb00;
+  transform: skewX(-20deg);
+  z-index: 1;
+}

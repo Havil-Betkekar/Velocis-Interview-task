@@ -1,0 +1,45 @@
+.homeWrapper {
+  display: flex;
+}
+.sideImg {
+  background-image: url("../../assets/jpg/hero-sectionbg.jpg");
+  width: 52%;
+  min-height: 100vh;
+  background-size: cover;
+}
+.textSection {
+  width: 48%;
+  padding: 2.2rem 0 0 5.5rem;
+}
+.textSection h2 {
+  font-size: 3.5rem;
+}
+.textSection p {
+  font-size: 1.375rem;
+  margin: 1.5rem 0;
+}
+.logoComibnations {
+  margin: 4rem 0;
+}
+.arrowBtn,
+.arrowTop {
+  position: fixed;
+  left: 1rem;
+  background-color: grey;
+  padding: 5px 5px 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrowBtn {
+  bottom: 3.5rem;
+}
+
+.arrowTop {
+  bottom: 3.5rem;
+}
+
+.logoComibnations img {
+  margin-left: 3rem;
+  width: 20rem;
+}

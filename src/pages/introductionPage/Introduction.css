@@ -1,0 +1,92 @@
+.introBgSection {
+  background-image: url("../../assets/jpg/Intro-page-bg.jpg");
+  min-height: 70vh;
+  background-size: cover;
+  position: relative;
+}
+.bgText {
+  position: absolute;
+  top: 7rem;
+  left: 5rem;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.introTextSection {
+  display: flex;
+  padding: 5rem 10rem 4rem;
+  gap: 2rem;
+}
+
+.introTextSection h3 {
+  font-size: 1.5rem;
+}
+
+.introTextSection p {
+  font-size: 1.125rem;
+}
+
+/* arrow css */
+.scrollArrow {
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #ffeb00;
+  color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+
+  animation: arrowFadeUp 0.6s ease forwards;
+}
+
+.scrollArrow.up {
+  background: black;
+  color: white;
+}
+.center {
+  text-align: center;
+}
+@keyframes arrowFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* arrow css ends */
+
+.anotherTextSection {
+  display: flex;
+  font-size: 1.12rem;
+}
+.left {
+  width: 30%;
+}
+.middle {
+  width: 35%;
+  padding: 0 2rem;
+}
+.right {
+  width: 35%;
+  padding: 0 2rem;
+}
+
+.receiptsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* vertical alignment */
+  gap: 6rem;
+  padding: 6rem 10rem;
+}
